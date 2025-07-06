@@ -1,69 +1,50 @@
-# React + TypeScript + Vite
+# 📊 Analytix – Finance Analytics Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Analytix is a modern, responsive, frontend-only landing page built with **React**, **TypeScript**, and **Tailwind CSS**. It’s designed to showcase a finance analytics product with clarity, speed, and style.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
 
-## Expanding the ESLint configuration
+👉 https://4nalytix.netfily.app
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
+## 🛠️ Tech Stack
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- ⚛️ **React** – Component-based UI
+- 🧠 **TypeScript** – Type safety and cleaner development
+- 🎨 **Tailwind CSS** – Utility-first styling
+- ⚡ **Vite** *(or CRA)* – Fast development/build (optional)
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 📁 Project Structure
+analytix/
+├── public/
+│ └── assets/ # Static files (images, icons, etc.)
+├── src/
+│ ├── components/ # Reusable UI components (Navbar, Hero, Features, etc.)
+│ ├── App.tsx # Main app file
+│ ├── index.tsx # Entry point
+│ └── main.css # Tailwind CSS directives
+├── tailwind.config.js # Tailwind config
+├── tsconfig.json # TypeScript config
+└── README.md
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 📦 Installation & Usage
+
+```bash
+# 1. Clone the repo
+git clone https://github.com/0x4MINE/landing_page.git
+
+# 2. Navigate to project
+cd landing_page
+
+# 3. Install dependencies
+npm install
+
+# 4. Start the development server
+npm run dev
